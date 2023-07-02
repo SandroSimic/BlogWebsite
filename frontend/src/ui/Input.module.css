@@ -1,0 +1,13 @@
+.input {
+    height: 4rem;
+    width: 30rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid var(--color-darken);
+    transition: all .6s;
+    padding: .5rem .6rem .5rem .6rem;
+    &:focus {
+        border: none;
+        outline: 1px solid var(--color-darken);
+    }
+}

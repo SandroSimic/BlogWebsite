@@ -1,0 +1,8 @@
+.username {
+    align-self: center;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--color-darken);
+    }
+}

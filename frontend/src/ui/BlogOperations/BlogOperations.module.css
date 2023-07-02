@@ -1,0 +1,27 @@
+.operations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    height: 10rem;
+    padding: 0 10rem;
+}
+
+.blogOperations{
+    display: flex;
+    gap: 5rem;
+}
+
+.countrySelect{
+    height: 4rem;
+    width: 20rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid var(--color-darken);
+    transition: all .6s;
+    padding: .5rem .6rem .5rem .6rem;
+    &:focus {
+        border: none;
+        outline: 1px solid var(--color-darken);
+    }
+}
