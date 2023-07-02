@@ -1,7 +1,7 @@
 import { HiPlus, HiSearch } from "react-icons/hi";
 import styles from './BlogOperations.module.css'
-import Button from "../Button";
-import Input from "../Input";
+import Button from "../../../ui/Button";
+import Input from "../../../ui/Input";
 
 function BlogOperations() {
   return <div className={styles.operations}>
