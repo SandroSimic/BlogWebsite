@@ -12,7 +12,7 @@ function BlogOperations() {
     </select>
     <Button type='primary'><HiSearch /><span className={styles.buttonText}>Search</span></Button>
   </div>
-  <Button type='new' to='new-blog'><HiPlus/> <span>New Blog</span></Button>
+  <Button type='new' to='new-blog' ><HiPlus/> <span>New Blog</span></Button>
   </div>;
 }
 

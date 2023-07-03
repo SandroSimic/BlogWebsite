@@ -3,19 +3,19 @@
 import { Link } from "react-router-dom";
 import styles from './Button.module.css'
 /* eslint-disable react/prop-types */
-function Button({onClick, type, to, children}) {
+function Button({onClick, type, to, children, style}) {
     let styleType;
-
+    
         if(type === 'primary'){
-            styleType = styles.primary
+            styleType = `${styles.primary} ${style}`
         }
     
         if(type === 'new'){
-            styleType = styles.new
+            styleType =  `${styles.new} ${style}`
         }
     
         if(type === 'danger'){
-            styleType = styles.danger
+            styleType = `${styles.danger} ${style}`
         }
 
         

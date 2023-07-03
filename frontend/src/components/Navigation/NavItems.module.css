@@ -16,8 +16,11 @@
  
 }
 
-.navLinks > li > div {
+.navLinks > li > a {
     display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
     gap: .6rem;
     padding: 1rem;
     transition: all .2s;

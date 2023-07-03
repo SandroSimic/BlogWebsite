@@ -1,32 +1,33 @@
 import { HiHome, HiBookmark,HiEye, HiUserGroup } from "react-icons/hi"
 
 import styles from './NavItems.module.css'
+import {NavLink } from "react-router-dom"
 function NavItems() {
   return (
       <ul className={styles.navLinks}>
         <li>
-          <div>
+          <NavLink to='/'>
             <HiHome />
             <p>Home</p>
-          </div>
+          </NavLink>
         </li>
         <li>
-          <div>
+          <NavLink>
             <HiBookmark />
             <p>Favorite</p>
-          </div>
+          </NavLink>
         </li>
         <li>
-          <div>
+          <NavLink>
             <HiEye />
             <p>Allow</p>
-          </div>
+          </NavLink>
         </li>
         <li>
-          <div>
+          <NavLink>
             <HiUserGroup />
             <p>Users</p>
-          </div>
+          </NavLink>
         </li>
       </ul>
   )
