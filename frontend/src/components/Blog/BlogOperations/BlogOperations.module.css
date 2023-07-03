@@ -5,11 +5,20 @@
     background-color: aliceblue;
     height: 10rem;
     padding: 0 10rem;
+
+    @media screen and (max-width: 700px) {
+        gap: 2rem;
+        padding: 0;
+    }
 }
 
 .blogOperations{
     display: flex;
     gap: 5rem;
+
+    @media screen and (max-width: 1100px) {
+        gap: 2rem;
+    }
 }
 
 .countrySelect{
@@ -23,5 +32,11 @@
     &:focus {
         border: none;
         outline: 1px solid var(--color-darken);
+    }
+}
+
+.buttonText{
+    @media screen and (max-width: 1100px) {
+        display: none;
     }
 }

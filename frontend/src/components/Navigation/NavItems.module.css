@@ -5,12 +5,15 @@
     justify-content: space-between;
     font-size: 1.6rem;
     gap: 2rem;
-    
+
 }
 
 .navLinks > li {
     display: flex;
     align-self: stretch;
+
+        
+ 
 }
 
 .navLinks > li > div {
