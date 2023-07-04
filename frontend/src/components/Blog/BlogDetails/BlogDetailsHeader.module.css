@@ -1,0 +1,33 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+
+.heading > h1 {
+    font-size: 3rem;
+}
+
+.detailsInfo{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.detailsInfo > img {
+    width: 50rem;
+    height: 25rem;
+}
+
+.blogInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.blogInfo > p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
