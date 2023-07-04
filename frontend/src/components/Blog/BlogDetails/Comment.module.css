@@ -1,0 +1,17 @@
+.comment {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-darkest);
+    padding: 1rem;
+    justify-content: space-around;
+    height: 10rem;
+}
+
+
+.comment h2 {
+    font-size: 2rem;
+}
+
+.comment p {
+    font-size: 1.6rem;
+}

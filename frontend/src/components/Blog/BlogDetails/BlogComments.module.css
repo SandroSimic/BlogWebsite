@@ -1,0 +1,21 @@
+.commentSection{ 
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentBtn {
+    margin-top: 2rem;
+    align-self: end;
+}
+
+.addComment{
+    margin-top: 5rem;
+}
+
+
+.commentInput{
+    width: 100%;
+    height: 5rem;
+    padding: 2rem;
+}
