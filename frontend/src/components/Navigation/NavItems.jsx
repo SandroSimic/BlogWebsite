@@ -12,13 +12,13 @@ function NavItems() {
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to='/favorite'>
             <HiBookmark />
             <p>Favorite</p>
           </NavLink>
         </li>
         <li>
-          <NavLink>
+          <NavLink to='/allow'>
             <HiEye />
             <p>Allow</p>
           </NavLink>

@@ -38,3 +38,19 @@
         cursor: pointer;
     }
 }
+
+
+.checkboxWrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.checkboxWrapper label {
+    font-size: 2rem;
+}
+
+.checkboxWrapper input {
+    width: 2.5rem;
+    height: 5rem;
+}

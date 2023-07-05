@@ -14,6 +14,15 @@ function Input({ type, placeholder, name, className, labelText }) {
     )
   }
 
+  if(type === 'checkbox') {
+    return (
+      <div className={styles.checkboxWrapper}>
+        <input type="checkbox" id='checkbox' className={styles.checkbox}/>
+        <label>Allow blog</label>
+      </div>
+    )
+  }
+
   return (
     <input
       className={className || styles.input}
