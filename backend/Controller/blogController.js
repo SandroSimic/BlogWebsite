@@ -108,17 +108,16 @@ exports.updateBlog = async (req, res) => {
       return res.status(404).json({ error: "Blog not found" })
     }
 
-
     res.status(200).json({
-        status: 'Success',
-        data: {
-            updatedBlog
-        }
+      status: "Success",
+      data: {
+        updatedBlog,
+      },
     })
   } catch (error) {
     res.status(400).json({
-        status: "Error",
-        error: error.message,
-      })
+      status: "Error",
+      error: error.message,
+    })
   }
 }

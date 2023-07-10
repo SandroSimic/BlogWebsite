@@ -3,7 +3,7 @@
 import { Link } from "react-router-dom";
 import styles from './Button.module.css'
 /* eslint-disable react/prop-types */
-function Button({onClick, type, to, children, style}) {
+function Button({onClick, type, to, children, style, defaultButton, className}) {
     let styleType;
     
         if(type === 'primary'){
@@ -18,7 +18,9 @@ function Button({onClick, type, to, children, style}) {
             styleType = `${styles.danger} ${style}`
         }
 
-        
+    if (defaultButton) {
+        return <button type="button" className={styleType || className} onClick={onClick}>{children}</button>
+    }
 
     if(to) {
         return <Link to={to} className={styleType}>{children}</Link>

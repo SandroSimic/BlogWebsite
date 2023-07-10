@@ -2,7 +2,7 @@ import styles from "./Input.module.css"
 import {HiPlus} from 'react-icons/hi'
 
 /* eslint-disable react/prop-types */
-function Input({ type, placeholder, name, className, labelText }) {
+function Input({ type, placeholder, name, className, labelText,onChange }) {
   if (type === "file") {
     return (
       <>
@@ -28,7 +28,8 @@ function Input({ type, placeholder, name, className, labelText }) {
       className={className || styles.input}
       type={type}
       placeholder={placeholder}
-      name={name}
+      name={name} 
+      onChange={onChange}
     />
   )
 }
