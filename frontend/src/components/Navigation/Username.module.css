@@ -1,5 +1,10 @@
 .username {
+    position: relative;
     align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
 
     &:hover{
         cursor: pointer;
@@ -10,3 +15,14 @@
         display: none;
     }
 }
+
+.username > a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--color-darken);
+    }
+}
+

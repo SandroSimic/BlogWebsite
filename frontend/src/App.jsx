@@ -6,9 +6,12 @@ import BlogDetails from './pages/BlogDetails'
 import FavoriteBlogs from './pages/FavoriteBlogs'
 import AllowedBlogs from './pages/AllowBlogs'
 import Register from './pages/Register'
+import { useAuthContext } from './context/authContext'
 
 function App() {
 
+  const {user} = useAuthContext()
+  
   return (
     <BrowserRouter>
       <Routes>

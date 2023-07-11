@@ -24,28 +24,6 @@ exports.getAllUsers = async (req, res) => {
   }
 }
 
-exports.createUser = async (req, res) => {
-  try {
-    const { username, email, password } = req.body
-
-    const user = await User.create({ username, email, password })
-
-    const newUser = await user.save()
-
-    res.status(200).json({
-      status: "Success",
-      data: {
-        newUser,
-      },
-    })
-  } catch (error) {
-    res.status(400).json({
-      status: "Error",
-      error: error.message,
-    })
-  }
-}
-
 exports.deleteUser = async (req, res) => {
   try {
     const userId = req.params.userId

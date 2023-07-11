@@ -34,6 +34,11 @@ const userSchema = new mongoose.Schema({
       },
     ],
   },
+  role: {
+    type: String,
+    enum: ['user', 'admin'],
+    default: 'user',
+  }
 })
 
 userSchema.pre('save', async function() {
@@ -46,5 +51,9 @@ userSchema.methods.createJWT = function() {
   return jwt.sign({userId: this._id}, process.env.JWT_SECRET, {expiresIn: process.env.JWT_LIFETIME})
 }
 
+userSchema.methods.comparePassword = async function(candidatePassword) {
+  const isMatch = await bcrypt.compare(candidatePassword, this.password)
+  return isMatch
+}
 
 module.exports = mongoose.model("User", userSchema)
